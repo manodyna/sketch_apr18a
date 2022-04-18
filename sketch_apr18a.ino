@@ -34,7 +34,7 @@ buzzer();
 void buzzer()//code for buzzer
 {
   val = analogRead(sensorpin);
-if(val<104){
+if(val<94){
   tone(buzzer, 1000); // Send 1KHz sound signal...
   delay(1000);        // ...for 1 sec
   noTone(buzzer);     // Stop sound...
