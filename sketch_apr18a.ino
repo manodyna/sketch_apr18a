@@ -8,15 +8,10 @@ void setup()
 {
 pinMode(ledPin, OUTPUT); // sets the ledPin to be an output
 pinMode(leftSignal, OUTPUT); // sets the leftSignal petal to be an
-output
 pinMode(rightSignal, OUTPUT); // sets the rightSignal petal to be an
-output
 pinMode(signalLow, OUTPUT); // sets the signalLow petal to be an
-output
 pinMode(proximity, INPUT);
-input
 pinMode(buzzer, OUTPUT);
-output
 pinMode
 digitalWrite(signalLow, LOW); // sets the signalLOW petal to LOW (-)
 }
@@ -29,9 +24,9 @@ digitalWrite(rightSignal, HIGH); // turn the right signal on
 delay(1000); // wait for 1 second
 digitalWrite(rightSignal, LOW); // turn the right signal off
 delay(1000); // wait for 1 second
-buzzer();
+buzz();
 }
-void buzzer()//code for buzzer
+void buzz()//code for buzzer
 {
   val = analogRead(sensorpin);
 if(val<94){
